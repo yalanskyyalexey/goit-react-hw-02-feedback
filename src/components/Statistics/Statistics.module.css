@@ -1,0 +1,11 @@
+.wrapper {
+  margin-left: 58px;
+  margin-top: 20px;
+}
+
+span {
+  font-size: 24px;
+  display: flex;
+  color: #152335;
+  margin-top: 10px;
+}
