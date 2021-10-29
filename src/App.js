@@ -29,22 +29,26 @@ class App extends Component {
   render() {
     return (
       <>
-        <Section className={styles.app} title="Please leave feedback">
-          <FeedbackOptions onLeaveFeedback={this.addFeedback}></FeedbackOptions>
-        </Section>
-        <Section title="Statistics">
-          {this.countTotalFeedback() > 0 ? (
-            <Statistics
-              good={this.state.good}
-              neutral={this.state.neutral}
-              bad={this.state.bad}
-              total={this.countTotalFeedback()}
-              positivePercentage={this.countPositiveFeedbackPercentage()}
-            ></Statistics>
-          ) : (
-            <Notification message="No feedback"></Notification>
-          )}
-        </Section>
+        <div className={styles.app}>
+          <Section title="Please leave feedback">
+            <FeedbackOptions
+              onLeaveFeedback={this.addFeedback}
+            ></FeedbackOptions>
+          </Section>
+          <Section title="Statistics">
+            {this.countTotalFeedback() > 0 ? (
+              <Statistics
+                good={this.state.good}
+                neutral={this.state.neutral}
+                bad={this.state.bad}
+                total={this.countTotalFeedback()}
+                positivePercentage={this.countPositiveFeedbackPercentage()}
+              ></Statistics>
+            ) : (
+              <Notification message="No feedback"></Notification>
+            )}
+          </Section>
+        </div>
       </>
     );
   }
