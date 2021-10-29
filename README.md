@@ -14,5 +14,5 @@
 
 ## Задания
 
-- [Задание 1 - Виджет отзывов](./feedback/)
+- [Задание 1 - Виджет отзывов](https://github.com/yalanskyyalexey/goit-react-hw-02-feedback/blob/main/feedback.md)
 - [Задание 2 - Телефонная книга](./phonebook/)
