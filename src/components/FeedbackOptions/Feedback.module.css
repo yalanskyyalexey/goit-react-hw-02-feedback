@@ -1,4 +1,4 @@
-button {
+.btn {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   width: 80px;
@@ -11,19 +11,19 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+.btn:hover {
   cursor: pointer;
   background-color: #e0e0e0;
   box-shadow: 3px 2px 6px rgb(0 0 0 / 20%);
 }
 
-button:hover:first-child {
+.btn:hover:first-child {
   cursor: pointer;
   color: #ffffff;
   background-color: #4baf4f;
 }
 
-button:hover:last-child {
+.btn:hover:last-child {
   cursor: pointer;
   color: #ffffff;
   background-color: #f44236;
