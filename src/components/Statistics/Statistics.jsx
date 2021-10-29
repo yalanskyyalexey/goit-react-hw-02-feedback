@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import styles from './Statistics.module.css';
 
-// test
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <div className={styles.wrapper}>

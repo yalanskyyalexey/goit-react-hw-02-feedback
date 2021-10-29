@@ -3,7 +3,9 @@ import Section from './components/Section/index';
 import FeedbackOptions from './components/FeedbackOptions/FeedbackOptions';
 import Statistics from './components/Statistics/';
 import Notification from './components/Notification/';
-import styles from './components/Section/Section.module.css';
+import './App.css';
+
+// console.log(styles);
 
 class App extends Component {
   state = {
@@ -28,9 +30,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className={styles.app}>
+      <div className="appWrapper">
         <Section title="Please leave feedback">
-          <FeedbackOptions onLeaveFeedback={this.addFeedback}></FeedbackOptions>
+          <FeedbackOptions
+            onLeaveFeedback={this.addFeedback}
+            btnNames={Object.keys(this.state)}
+          ></FeedbackOptions>
         </Section>
         <Section title="Statistics">
           {this.countTotalFeedback() > 0 ? (
