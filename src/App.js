@@ -5,8 +5,6 @@ import Statistics from './components/Statistics/';
 import Notification from './components/Notification/';
 import './App.css';
 
-// console.log(styles);
-
 class App extends Component {
   state = {
     good: 0,
@@ -56,26 +54,3 @@ class App extends Component {
 }
 
 export default App;
-
-// function App() {
-//   return (
-//     <div className={styles.app}>
-//       <Section title="Please leave feedback"></Section>
-//       <Feedback />
-//       <Statistics />
-//       <Notification />
-//     </div>
-//   );
-// }
-
-// class Counter extends Component {
-// 	state = {
-// 	  good: 0,
-// 	  neutral: 0,
-// 	  bad: 0,
-// 	};
-// onLeaveFeedback = () => {
-//     this.setState({ good: 1 });
-//   };
-
-//   render() {
